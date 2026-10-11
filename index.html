@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Queijo Coalho Recheado | Queijo de Casa</title>
   
-  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <!-- Google Fonts: Playfair Display & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,55 +16,103 @@
 
   <!-- 1. TOP ANNOUNCEMENT BAR -->
   <header class="top-bar">
-    <p>Aproveite agora o <strong>LOTE ESPECIAL</strong> por <strong>R$17</strong></p>
+    <p class="top-bar-text">Aproveite agora o LOTE ESPECIAL por <span class="top-bar-price">R$17</span></p>
   </header>
 
   <!-- 2. HERO SECTION -->
   <section class="hero-section">
     <div class="container">
       <div class="hero-grid">
+        
+        <!-- Left Column: Copywriting & Actions -->
         <div class="hero-content">
-          <h1 class="hero-h1">
-            Em apenas <span class="serif-highlight">2 dias ao vivo</span> comigo, aprenda a fazer <span class="serif-highlight">Queijo Coalho Recheado</span> e tenha o produto mais desejado e comentado da sua região.
+          <h1 class="hero-title">
+            Em apenas <span class="text-italic-orange">2 dias ao vivo</span> comigo,<br>
+            aprenda a fazer <span class="text-italic-orange">Queijo Coalho Recheado</span><br>
+            e tenha o produto mais desejado<br>
+            e comentado da sua região.
           </h1>
+
           <p class="hero-subtitle">
             Vou te entregar o <strong>passo a passo</strong>, da produção à técnica de recheio que dobra o valor do seu queijo. Além de dominar a prática, você sairá com o plano para realizar as primeiras vendas desse produto, <strong>mesmo que esteja começando do zero.</strong>
           </p>
 
+          <!-- Badges: Outline Icons, Zero Background Pill -->
           <div class="hero-badges">
-            <div class="hero-badge-pill">
-              <span>📅</span>
-              <span>Dias 28 e 29 de abril</span>
+            <div class="hero-badge-item">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span><strong>Dias 28</strong> e <strong>29 de abril</strong></span>
             </div>
-            <div class="hero-badge-pill">
-              <span>⏰</span>
-              <span>Às 18h (horário de Brasília)</span>
+            
+            <div class="hero-badge-item">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Às <strong>18h</strong> (horário de Brasília)</span>
             </div>
           </div>
 
-          <div class="hero-progress">
-            <span class="hero-progress-label">80%</span>
-            <div class="progress-track">
-              <div class="progress-fill">LOTES</div>
+          <!-- Progress Pill: 80% with Dark Green Inner LOTES Pill -->
+          <div class="hero-progress-pill">
+            <span class="progress-percent">80%</span>
+            <div class="progress-bar-inner">
+              <span class="progress-bar-text">LOTES</span>
             </div>
           </div>
 
-          <div>
-            <a href="#checkout" class="btn-primary">
-              <span>GARANTIR MINHA VAGA</span>
-              <span class="btn-arrow">↗</span>
+          <!-- CTA Button & Subtext -->
+          <div class="hero-cta-wrapper">
+            <a href="#checkout" class="hero-btn-cta">
+              <span class="cta-text">GARANTIR MINHA VAGA</span>
+              <span class="cta-circle-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
             </a>
-            <p class="btn-subtext">Ao vivo e 100% prático</p>
+            <p class="cta-subtext">Ao vivo e 100% prático</p>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-seal">Q</div>
-          <div class="hero-arch-frame">
-            <img src="assets/images/crops/hero-karla.webp" alt="Karla - Mestre Queijeira com Queijo Coalho Recheado">
+        <!-- Right Column: Arch, Watermark Seal, Orbital SVG & Person Slot -->
+        <div class="hero-visual-column">
+          
+          <!-- Background SVG Orbital Rings -->
+          <div class="hero-orbital-wrapper">
+            <img src="assets/images/svg/orbital-rings.svg" class="hero-orbital-svg" alt="" aria-hidden="true">
           </div>
+
+          <!-- Orange Arch Container -->
+          <div class="hero-arch-container">
+            <div class="hero-orange-arch">
+              <!-- Watermark Seal on Left Curve -->
+              <img src="assets/images/svg/arch-seal.svg" class="hero-arch-seal" alt="Queijo de Casa" aria-hidden="true">
+            </div>
+
+            <!-- ESPAÇO RESERVADO : FOTO DA MENTORA (ZERO PLACEHOLDER GENÉRICO) -->
+            <div class="hero-person-slot" data-slot="person-photo" aria-label="Espaço reservado para foto da mentora">
+              <!-- Espaço reservado: Insira aqui a foto oficial da mentora <img src="..." alt="Karla"> -->
+            </div>
+          </div>
+
         </div>
+
       </div>
+    </div>
+
+    <!-- Bottom Curve Divider & Floating Cheese Elements -->
+    <div class="hero-bottom-divider">
+      <svg class="hero-bottom-curve-svg" viewBox="0 0 1920 100" preserveAspectRatio="none">
+        <path d="M 0,35 Q 960,85 1920,30 L 1920,100 L 0,100 Z" fill="#092C25"></path>
+      </svg>
+      <img src="assets/images/crops/floating-cheese-left.png" class="floating-cheese floating-cheese-left" alt="" aria-hidden="true">
     </div>
   </section>
 
@@ -89,7 +137,6 @@
       </p>
 
       <div class="problem-cards-grid">
-        <!-- Situation 1 -->
         <div class="problem-card">
           <div class="problem-icon">🚫</div>
           <div class="problem-content">
@@ -101,7 +148,6 @@
           </div>
         </div>
 
-        <!-- Situation 2 -->
         <div class="problem-card">
           <div class="problem-icon">🔥</div>
           <div class="problem-content">
@@ -112,17 +158,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 8px;">
-          A maioria dos cursos por aí te ensina a fazer "mais do mesmo". E o mercado não precisa de mais um queijo comum.
-        </p>
-        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 6px;">O mercado precisa de</p>
-        <h3 style="font-family: var(--font-serif); font-size: 2.8rem; color: var(--color-orange-main); font-style: italic; margin-bottom: 12px;">Diferenciação</h3>
-        <p style="font-size: 1.1rem; color: var(--text-secondary);">
-          Foi pensando exatamente nisso que eu decidi fazer algo que muitos consideraram loucura.
-        </p>
       </div>
     </div>
   </section>
@@ -140,49 +175,17 @@
           <h2 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 12px;">
             Eu ensino essa técnica de <span class="serif-highlight">Queijo Coalho Recheado</span>
           </h2>
-          <p style="color: var(--text-secondary); font-size: 1.05rem;">
+          <p style="color: var(--text-body); font-size: 1.05rem;">
             dentro da minha formação, um treinamento completo de:
           </p>
           <div class="story-price-pill">R$ 897,00</div>
-          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px;">
+          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 16px;">
             É lá que eu transformo simples queijeiros e não queijeiros em especialistas em queijos recheados.
           </p>
-          <p style="color: var(--text-secondary); line-height: 1.7;">
+          <p style="color: var(--text-body); line-height: 1.7;">
             Mas eu percebi que muitos precisavam de um <strong>"atalho"</strong>. A porta de entrada para um novo nível de faturamento, sem precisar investir esse valor logo de cara.
           </p>
         </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 60px;">
-        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 30px;">
-          Eu criei este treinamento ao vivo para você que:
-        </h3>
-        <div class="features-three-grid">
-          <div class="feature-box">
-            <div class="feature-num">1</div>
-            <p style="font-weight: 600; color: var(--text-primary);">Precisa de um produto 'chamariz' para atrair novos clientes hoje;</p>
-          </div>
-          <div class="feature-box">
-            <div class="feature-num">2</div>
-            <p style="font-weight: 600; color: var(--text-primary);">Quer dominar uma técnica segura, sem medo de perder a produção;</p>
-          </div>
-          <div class="feature-box">
-            <div class="feature-num">3</div>
-            <p style="font-weight: 600; color: var(--text-primary);">Deseja ter acesso a um conteúdo digno de um mestre queijeiro por um valor que cabe no seu bolso agora.</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 50px;">
-        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 8px;">Este não é um:</p>
-        <h4 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-orange-main); font-style: italic; margin-bottom: 12px;">"cursinho de receita"</h4>
-        <p style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 30px;">
-          É a chance de você aprender uma técnica lucrativa e exclusiva do meu método, <strong style="color: var(--color-orange-main);">pelo preço de um lanche.</strong>
-        </p>
-        <a href="#checkout" class="btn-primary">
-          <span>É O QUE PRECISO</span>
-          <span class="btn-arrow">↗</span>
-        </a>
       </div>
     </div>
   </section>
@@ -194,25 +197,19 @@
       <h2 class="section-title">
         O caminho exato: Da sua inscrição até o seu primeiro <span class="serif-highlight">Queijo Coalho Recheado</span> pronto para o lucro.
       </h2>
-      <p class="section-desc" style="margin: 0 auto;">
-        Muitas pessoas travam antes de começar porque acham que o processo é um "bicho de sete cabeças", ou que vão se sentir perdidas depois de entrar. Para que você tenha clareza total, aqui está o que vai acontecer:
-      </p>
 
       <div class="steps-grid">
-        <!-- Step 1 -->
         <div class="step-card">
           <div class="step-img-box">
             <img src="assets/images/crops/step-1.webp" alt="Entrada no Grupo">
             <span class="step-badge">ETAPA 1</span>
           </div>
           <div class="step-body">
-            <span class="step-tag">Comunidade</span>
             <h3 class="step-title">Entrada no Grupo Queijeiros Raiz</h3>
-            <p class="step-desc">Assim que sua inscrição for confirmada, você recebe acesso ao nosso grupo oficial para não se sentir sozinho(a) e receber o cronograma completo.</p>
+            <p class="step-desc">Acesso imediato ao grupo oficial para receber avisos, materiais e alinhamento de cronograma.</p>
           </div>
         </div>
 
-        <!-- Step 2 -->
         <div class="step-card">
           <div class="step-img-box">
             <img src="assets/images/crops/step-2.webp" alt="A base e primeiras vendas">
@@ -220,13 +217,11 @@
             <span class="step-live-badge">AO VIVO</span>
           </div>
           <div class="step-body">
-            <span class="step-tag">Produção</span>
             <h3 class="step-title">A base e as primeiras vendas</h3>
-            <p class="step-desc">No primeiro encontro abrimos a cozinha: passo a passo real da massa, sem perder leite por insegurança, e como pegar os primeiros pedidos.</p>
+            <p class="step-desc">Passo a passo da massa sem risco de perder leite e técnica de validação de pedidos.</p>
           </div>
         </div>
 
-        <!-- Step 3 -->
         <div class="step-card">
           <div class="step-img-box">
             <img src="assets/images/crops/step-3.webp" alt="A técnica mestre do recheio">
@@ -234,31 +229,21 @@
             <span class="step-live-badge">AO VIVO</span>
           </div>
           <div class="step-body">
-            <span class="step-tag">Especialização</span>
             <h3 class="step-title">A técnica Mestre do Recheio</h3>
-            <p class="step-desc">A base dominada dá lugar ao diferencial lucrativo: como transformar o queijo coalho em um produto artesanal único e altamente desejado.</p>
+            <p class="step-desc">A técnica do recheio cremoso e combinações gastronômicas que dobram o ticket.</p>
           </div>
         </div>
 
-        <!-- Step 4 -->
         <div class="step-card">
           <div class="step-img-box">
             <img src="assets/images/crops/step-4.webp" alt="O resultado final">
             <span class="step-badge">ETAPA 4</span>
           </div>
           <div class="step-body">
-            <span class="step-tag">Conquista</span>
             <h3 class="step-title">O resultado final</h3>
-            <p class="step-desc">Ao final dos dois dias, você terá o domínio de um produto de alto valor e a segurança de quem aprendeu com uma mestre queijeira.</p>
+            <p class="step-desc">Domínio completo da receita autoral e independência na produção comercial.</p>
           </div>
         </div>
-      </div>
-
-      <div>
-        <a href="#checkout" class="btn-primary">
-          <span>QUERO PARTICIPAR</span>
-          <span class="btn-arrow">↗</span>
-        </a>
       </div>
     </div>
   </section>
@@ -270,16 +255,10 @@
       <h2 class="section-title">
         Não confie em mim, veja o que os <span class="serif-highlight">queijeiros</span> dizem sobre o método
       </h2>
-      <p class="section-desc" style="margin: 0 auto;">Mais de centenas de alunos pelo Brasil e pelo mundo faturando com queijos recheados.</p>
 
       <div class="testimonials-banner-img">
         <img src="assets/images/crops/depoimentos-grid.webp" alt="Mural de depoimentos e resultados dos alunos">
       </div>
-
-      <a href="#checkout" class="btn-primary">
-        <span>ESTOU DECIDIDO(A)</span>
-        <span class="btn-arrow">↗</span>
-      </a>
     </div>
   </section>
 
@@ -292,22 +271,13 @@
             <span class="warning-tag">⚠️ ATENÇÃO!</span>
             <h3>Pausa na programação: <em>Leia isso antes de continuar</em></h3>
             <p><strong>Isso aqui não é uma fórmula mágica para você ganhar dinheiro sem esforço.</strong></p>
-            <p>Eu não estou aqui para te prometer que você vai construir um império de queijos da noite para o dia ou que o dinheiro vai cair na sua conta apenas por assistir às aulas.</p>
-            <p>Se você está buscando uma forma de ganhar dinheiro sem encostar a mão na massa, este treinamento definitivamente não é para você.</p>
+            <p>Se você busca uma forma de ganhar dinheiro sem encostar a mão na massa, este treinamento não é para você.</p>
           </div>
 
           <div class="warning-col">
             <span class="warning-tag" style="background: rgba(248, 148, 82, 0.2); color: #FFFFFF;">🎯 COMPROMISSO</span>
             <h3>O que <em>eu entrego</em> é o seguinte:</h3>
             <p>A técnica validada e o método prático que eu aperfeiçoei em <strong>6 anos intensos de estudo e prática.</strong></p>
-            <p>Eu vou te mostrar como produzir um queijo coalho recheado impecável e como usar esse diferencial para atrair clientes reais.</p>
-            <p>O resultado depende da sua execução. Eu te dou o mapa e a bússola, mas é você quem precisa caminhar.</p>
-            <div style="margin-top: 24px;">
-              <a href="#checkout" class="btn-primary" style="background: linear-gradient(135deg, #DE6426 0%, #BA4914 100%);">
-                <span>É O QUE PROCURO</span>
-                <span class="btn-arrow">↗</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -326,23 +296,8 @@
           <div class="section-tag">👤 SOBRE MIM</div>
           <h2>Por que você deveria <span class="serif-highlight">confiar em mim</span></h2>
           <p>
-            <strong>Meu nome é Karla.</strong> Ensino queijos artesanais há mais de 6 anos. Mas nem sempre foi assim. Eu era formada em Contabilidade e Gestão Financeira. Tinha MBA em Liderança e em Gestão de Negócios. No papel, eu tinha tudo. Mas algo estava faltando.
+            <strong>Meu nome é Karla.</strong> Ensino queijos artesanais há mais de 6 anos. Me formei como <strong>Mestre Queijeira na Escola de Queijos</strong>, em Juiz de Fora (MG), e desde 2020 já ajudei centenas de pessoas a conquistarem liberdade financeira produzindo de casa.
           </p>
-          <p>
-            Até que os queijos mudaram a minha vida. Eu me apaixonei, me joguei de cabeça. Me formei como <strong>Mestre Queijeira na Escola de Queijos</strong>, em Juiz de Fora, Minas Gerais, fiz diversos treinamentos pelo país e comecei a produzir.
-          </p>
-          <p>
-            Mas o que realmente me transformou foi perceber algo simples: se eu consegui, qualquer pessoa consegue. Não é sobre ter experiência ou ter dinheiro sobrando. É sobre ter o método certo e a coragem de começar.
-          </p>
-          <p>
-            Desde 2020, já ajudei centenas de pessoas a conquistarem sua liberdade financeira produzindo da própria cozinha. Agora é a sua vez.
-          </p>
-          <div style="margin-top: 30px;">
-            <a href="#checkout" class="btn-primary">
-              <span>QUERO PARTICIPAR</span>
-              <span class="btn-arrow">↗</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -355,26 +310,13 @@
         <div class="guarantee-content">
           <div class="section-tag">🛡️ SEM RISCOS / SEM BUROCRACIA</div>
           <h2>O risco de testar esse método é todo meu, não seu.</h2>
-          <h3>Participe do primeiro dia de aula. Se você não aprender nada, eu devolvo o seu dinheiro.</h3>
           <p>
-            Eu acredito tanto na qualidade do que vou te ensinar e na força do método que refinei em 6 anos, que eu te dou uma Garantia de Satisfação Incondicional.
+            Participe do primeiro dia de aula ao vivo. Se sentir que o conteúdo não agregou valor, devolvo 100% do seu dinheiro sem perguntas e sem letras miúdas.
           </p>
-          <p>
-            Você pode garantir sua vaga agora, entrar no Grupo dos Queijeiros Raiz e participar de todo o primeiro dia do treinamento ao vivo. Se sentir que o conteúdo não agregou valor, basta entrar em contato com a minha equipe.
-          </p>
-          <p>
-            <strong>Eu te devolvo 100% do valor pago, sem perguntas, sem letras miúdas e sem ressentimentos.</strong>
-          </p>
-          <div style="margin-top: 30px;">
-            <a href="#checkout" class="btn-primary">
-              <span>ESTOU DENTRO</span>
-              <span class="btn-arrow">↗</span>
-            </a>
-          </div>
         </div>
 
         <div class="guarantee-seal-box">
-          <img src="assets/images/crops/guarantee-seal.webp" alt="Selo de Garantia Incondicional" style="max-width: 380px;">
+          <img src="assets/images/crops/guarantee-seal.webp" alt="Selo de Garantia Incondicional" style="max-width: 360px;">
         </div>
       </div>
     </div>
@@ -393,37 +335,23 @@
           <ul class="deliverable-list">
             <li class="deliverable-item">
               <span class="deliverable-check">✓</span>
-              <div class="deliverable-text">
+              <div>
                 <strong>2 Aulas Online e Ao vivo:</strong>
-                <p>Dois encontros direto da cozinha da Karla para aprender na prática, sem edições. Ao vivo, nos dias 28 e 29/04, às 18:00 h.</p>
+                <p>Dias 28 e 29/04, às 18:00 h direto da cozinha da Karla.</p>
               </div>
             </li>
             <li class="deliverable-item">
               <span class="deliverable-check">✓</span>
-              <div class="deliverable-text">
+              <div>
                 <strong>Método de Produção Passo a Passo:</strong>
-                <p>O guia completo para fazer a massa do queijo coalho e acertar o ponto de primeira.</p>
+                <p>O guia para acertar a consistência e o ponto da massa.</p>
               </div>
             </li>
             <li class="deliverable-item">
               <span class="deliverable-check">✓</span>
-              <div class="deliverable-text">
+              <div>
                 <strong>Técnica Mestre do Recheio:</strong>
-                <p>O segredo para rechear e criar as combinações que valorizam o produto.</p>
-              </div>
-            </li>
-            <li class="deliverable-item">
-              <span class="deliverable-check">✓</span>
-              <div class="deliverable-text">
-                <strong>Plano de Primeiras Vendas:</strong>
-                <p>Orientação prática (já no Dia 1) para você saber como você pode fazer as primeiras vendas.</p>
-              </div>
-            </li>
-            <li class="deliverable-item">
-              <span class="deliverable-check">✓</span>
-              <div class="deliverable-text">
-                <strong>Grupo dos Queijeiros Raiz:</strong>
-                <p>Acesso à comunidade exclusivo para avisos, materiais de apoio e acompanhamento durante o evento.</p>
+                <p>O segredo para não vazar e valorizar o produto.</p>
               </div>
             </li>
           </ul>
@@ -431,19 +359,18 @@
 
         <div class="checkout-card">
           <div class="checkout-badge">Lote promocional, então aproveite</div>
-          <p class="checkout-price-label">Por apenas</p>
+          <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8);">Por apenas</p>
           <div class="checkout-price-val">R$ 17,00</div>
           
-          <a href="#" class="btn-primary" style="margin-bottom: 20px;">
-            <span>COMPRAR AGORA</span>
-            <span class="btn-arrow">↗</span>
+          <a href="#" class="hero-btn-cta" style="width: 100%; margin: 0 auto;">
+            <span class="cta-text">COMPRAR AGORA</span>
+            <span class="cta-circle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
           </a>
-
-          <div class="checkout-badges-row">
-            <span>🔒 Pagamento Seguro</span>
-            <span>⚡ Acesso Imediato</span>
-          </div>
-          <p class="checkout-footer-note">Tudo isso por menos de um lanche.</p>
         </div>
       </div>
     </div>
@@ -464,57 +391,7 @@
             <span class="faq-toggle-icon">+</span>
           </div>
           <div class="faq-body">
-            <p>Sim! O treinamento foi estruturado exatamente para quem está começando do absoluto zero, ensinando cada detalhe desde a temperatura até a consistência correta.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Preciso ter experiência na produção de queijos?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Nenhuma experiência é necessária. Mostraremos todo o passo a passo de forma simples, visual e prática.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Vou precisar produzir o queijo durante a aula?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Não é obrigatório. Você pode assistir com calma, tirar todas as suas dúvidas ao vivo e depois reproduzir na sua cozinha no seu próprio ritmo.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Como vou acessar as aulas?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Assim que seu pagamento for confirmado, você receberá um e-mail com o link de acesso exclusivo e o convite para o grupo oficial dos Queijeiros Raiz.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Preciso instalar algum aplicativo para assistir?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Não! Você poderá assistir diretamente pelo navegador de qualquer computador, tablet ou celular com conexão à internet.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Posso assistir pelo celular?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Com certeza. A plataforma é 100% compatível com celulares Android e iPhone.</p>
+            <p>Sim! O treinamento foi estruturado para quem está começando do zero absoluto.</p>
           </div>
         </div>
 
@@ -524,37 +401,7 @@
             <span class="faq-toggle-icon">+</span>
           </div>
           <div class="faq-body">
-            <p>Sim, a gravação será disponibilizada aos alunos inscritos para revisão posterior.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>E se eu não puder assistir ao vivo?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Você terá acesso integral à gravação das duas aulas para assistir no horário que for mais conveniente para você.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Esse evento é para quem quer vender queijos ou apenas por hobby?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Atende aos dois públicos! Se você quer apenas surpreender a família com uma iguaria artesanal incrível, vai adorar. E se deseja transformar em uma fonte lucrativa de renda, terá o plano exato de vendas.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>Vou aprender apenas receita ou algo além disso?</span>
-            <span class="faq-toggle-icon">+</span>
-          </div>
-          <div class="faq-body">
-            <p>Muito além da receita: ensinamos a física e a química prática da coagulação, técnicas seguras de conservação, recheio sem vazamento e estratégia comercial de atração de clientes.</p>
+            <p>Sim, a gravação será disponibilizada integralmente aos alunos inscritos.</p>
           </div>
         </div>
 
@@ -564,21 +411,15 @@
             <span class="faq-toggle-icon">+</span>
           </div>
           <div class="faq-body">
-            <p>Você está coberto(a) pela nossa Garantia Incondicional. Se não gostar, basta mandar uma mensagem que devolvemos 100% do seu dinheiro sem qualquer burocracia.</p>
+            <p>Você tem a nossa Garantia Incondicional: basta um e-mail para receber 100% de volta.</p>
           </div>
         </div>
       </div>
 
-      <!-- SUPPORT CARD -->
       <div class="support-card">
-        <div class="support-icon">💬</div>
-        <div class="section-tag">FALE COM O NOSSO SUPORTE</div>
-        <h3>Se ainda estiver com dúvida, entre em contato agora mesmo!</h3>
-        <p>Entre em contato com a nossa equipe e receba um atendimento ágil, humanizado e com foco na sua necessidade.</p>
-        <a href="https://wa.me/" target="_blank" class="btn-primary">
-          <span>FALE COM O NOSSO SUPORTE AGORA MESMO</span>
-          <span class="btn-arrow">↗</span>
-        </a>
+        <div class="section-tag">FALE COM O SUPORTE</div>
+        <h3>Se ainda estiver com dúvida, entre em contato!</h3>
+        <p>Atendimento humanizado para tirar qualquer dúvida remanescente.</p>
       </div>
     </div>
   </section>
