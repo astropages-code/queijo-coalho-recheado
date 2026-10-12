@@ -592,99 +592,124 @@ a {
    ========================================================================== */
 .target-audience-section {
   position: relative;
-  padding: 60px 0 90px;
+  padding: 68px 0 84px;
   background-color: var(--bg-ivory);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .target-watermark-seal {
   position: absolute;
-  top: 10px;
-  right: 6vw;
+  top: 25px;
+  right: calc(50% - 535px);
   width: 140px;
   height: 140px;
-  opacity: 0.35;
+  opacity: 0.95;
+  z-index: 1;
   pointer-events: none;
 }
 
 .target-seal-img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .target-section-title {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 2.4rem;
+  font-size: 2.28rem;
   font-weight: 500;
   text-align: center;
   color: var(--text-dark);
-  margin-bottom: 50px;
-  letter-spacing: -0.01em;
+  margin-bottom: 48px;
+  letter-spacing: -0.012em;
 }
 
 .target-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1180px;
+  gap: 22px;
+  max-width: 1040px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .target-card {
+  position: relative;
   background-color: #FFFFFF;
-  border-radius: 20px;
-  padding: 34px 28px 38px;
+  border-radius: 18px;
+  padding: 30px 22px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.045);
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.04), 0 3px 10px -2px rgba(0, 0, 0, 0.02);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 2;
 }
 
 .target-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.07);
 }
 
+/* Green pill mounted directly straddling the top border */
 .target-card-accent-pill {
-  width: 58px;
-  height: 6px;
-  background-color: var(--bg-green-top);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 5px;
+  background-color: #1A382B;
   border-radius: 9999px;
-  margin-bottom: 24px;
+  z-index: 3;
 }
 
 .target-card-icon-circle {
-  width: 68px;
-  height: 68px;
+  position: relative;
+  width: 44px;
+  height: 44px;
   background: linear-gradient(135deg, #DE6426 0%, #C45217 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(196, 82, 23, 0.25);
-  border: 3px solid #FFFFFF;
-  margin-bottom: 24px;
+  box-shadow: 0 3px 10px rgba(196, 82, 23, 0.22);
+  margin-bottom: 22px;
+}
+
+/* Outer concentric ring with delicate gap */
+.target-card-icon-circle::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px solid rgba(222, 100, 38, 0.38);
+  pointer-events: none;
 }
 
 .target-icon-svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
 }
 
 .target-card-text {
   font-family: var(--font-sans);
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: #242424;
+  font-size: 0.95rem;
+  line-height: 1.48;
+  color: #222222;
+  max-width: 235px;
+  margin: 0 auto;
 }
 
 .target-card-num {
   color: #DE6426;
   font-weight: 700;
+  font-size: 1.02rem;
+  margin-right: 2px;
 }
 
 /* ==========================================================================

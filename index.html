@@ -84,21 +84,22 @@
         <!-- Right Column: Arch, Watermark Seal, Orbital SVG & Person Slot -->
         <div class="hero-visual-column">
           
-          <!-- Background SVG Orbital Rings -->
+          <!-- Background SVG Orbital Rings (Vetor Nativo Inline) -->
           <div class="hero-orbital-wrapper">
-            <img src="assets/images/svg/orbital-rings.svg" class="hero-orbital-svg" alt="" aria-hidden="true">
+            <svg class="hero-orbital-svg" viewBox="0 0 950 820" fill="none" stroke="#DEC9A8" stroke-width="1.8" stroke-opacity="0.6" aria-hidden="true">
+              <ellipse cx="480" cy="400" rx="430" ry="220" transform="rotate(-25, 480, 400)" />
+              <ellipse cx="480" cy="400" rx="340" ry="165" transform="rotate(-25, 480, 400)" stroke-opacity="0.5" />
+              <path d="M 80 480 C 180 280, 480 180, 820 220" stroke="#E5D6BD" stroke-width="1.4" stroke-opacity="0.4" />
+            </svg>
           </div>
 
           <!-- Orange Arch Container -->
           <div class="hero-arch-container">
-            <div class="hero-orange-arch">
-              <!-- Watermark Seal on Left Curve -->
-              <img src="assets/images/svg/arch-seal.svg" class="hero-arch-seal" alt="Queijo de Casa" aria-hidden="true">
-            </div>
+            <div class="hero-orange-arch"></div>
 
             <!-- ESPAÇO RESERVADO : FOTO DA MENTORA (ZERO PLACEHOLDER GENÉRICO) -->
             <div class="hero-person-slot" data-slot="person-photo" aria-label="Espaço reservado para foto da mentora">
-              <!-- Espaço reservado: Insira aqui a foto oficial da mentora <img src="..." alt="Karla"> -->
+              <!-- Espaço reservado: Insira aqui a foto oficial da mentora -->
             </div>
           </div>
 
@@ -107,12 +108,11 @@
       </div>
     </div>
 
-    <!-- Bottom Curve Divider & Floating Cheese Elements -->
+    <!-- Bottom Curve Divider -->
     <div class="hero-bottom-divider">
       <svg class="hero-bottom-curve-svg" viewBox="0 0 1920 100" preserveAspectRatio="none">
         <path d="M 0,35 Q 960,85 1920,30 L 1920,100 L 0,100 Z" fill="#092C25"></path>
       </svg>
-      <img src="assets/images/crops/floating-cheese-left.png" class="floating-cheese floating-cheese-left" alt="" aria-hidden="true">
     </div>
   </section>
 
@@ -155,9 +155,6 @@
           <div class="problem-content">
             <h3>Já produz, mas é <span class="serif-highlight">"invisível"</span></h3>
             <p>Seus queijos são bons, mas não têm aquele "fator uau" que faz o cliente parar o que está fazendo e não te perguntar o valor, mas qual o seu pix.</p>
-            <div class="problem-img-wrapper">
-              <img src="assets/images/crops/cheese-fork.webp" alt="Queijo com recheio cremoso e temperos">
-            </div>
           </div>
         </div>
 
@@ -166,9 +163,6 @@
           <div class="problem-content">
             <h3>Você quer começar, mas tem <span class="serif-highlight">medo</span></h3>
             <p>Você morre de medo de perder leite, errar o ponto ou, pior, produzir algo que ninguém queira comprar e ficar com o prejuízo.</p>
-            <div class="problem-img-wrapper">
-              <img src="assets/images/crops/artisan-woman.webp" alt="Produção de queijo artesanal">
-            </div>
           </div>
         </div>
       </div>
@@ -177,10 +171,6 @@
 
   <!-- 5. TARGET AUDIENCE (OS 3 CARDS COM TRAÇO VERDE E CÍRCULO DE LOGO) -->
   <section class="target-audience-section">
-    <div class="target-watermark-seal" aria-hidden="true">
-      <img src="assets/images/svg/arch-seal.svg" alt="" class="target-seal-img">
-    </div>
-
     <div class="container">
       <h2 class="target-section-title">
         Eu criei este treinamento ao vivo para você que :
@@ -192,15 +182,16 @@
           <div class="target-card-accent-pill" aria-hidden="true"></div>
           <div class="target-card-icon-circle" data-slot="card-logo-1">
             <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 12 20 22 4 22 4 12"></polyline>
-              <rect x="2" y="7" width="20" height="5"></rect>
-              <line x1="12" y1="22" x2="12" y2="7"></line>
-              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+              <path d="M12 4.5L8.5 8L12 11.5L15.5 8L12 4.5Z" />
+              <path d="M11 5.5L14.5 9L13.5 12" />
+              <path d="M3.5 9.5L7.5 8.5L9.5 11.5L4 12.5Z" />
+              <path d="M20.5 9.5L16.5 8.5L14.5 11.5L20 12.5Z" />
+              <path d="M4 12.5V18.5L12 21.5L20 18.5V12.5" />
+              <path d="M12 14V21.5" />
             </svg>
           </div>
           <p class="target-card-text">
-            <strong class="target-card-num">1.</strong> Precisa de um produto "chamariz" para atrair novos clientes hoje;
+            <strong class="target-card-num">1.</strong> Precisa de um produto<br>"chamariz" para atrair<br>novos clientes hoje;
           </p>
         </div>
 
@@ -209,12 +200,12 @@
           <div class="target-card-accent-pill" aria-hidden="true"></div>
           <div class="target-card-icon-circle" data-slot="card-logo-2">
             <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              <polyline points="9 12 11 14 15 10"></polyline>
+              <path d="M12 3C15 4.5 18 5 19.5 5.2C19.8 11.5 17.5 17.5 12 21C6.5 17.5 4.2 11.5 4.5 5.2C6 5 9 4.5 12 3Z" />
+              <path d="M9 11.8L11.2 14L15.5 9.5" />
             </svg>
           </div>
           <p class="target-card-text">
-            <strong class="target-card-num">2.</strong> Quer dominar uma técnica segura, sem medo de perder a produção.
+            <strong class="target-card-num">2.</strong> Quer dominar uma<br>técnica segura, sem medo<br>de perder a produção.
           </p>
         </div>
 
@@ -223,11 +214,12 @@
           <div class="target-card-accent-pill" aria-hidden="true"></div>
           <div class="target-card-icon-circle" data-slot="card-logo-3">
             <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              <path d="M6 3.5H18C19.38 3.5 20.5 4.62 20.5 6V14.5C20.5 15.88 19.38 17 18 17H14.5L12 20.2L9.5 17H6C4.62 17 3.5 15.88 3.5 14.5V6C3.5 4.62 4.62 3.5 6 3.5Z" />
+              <polygon points="12 6.8 13.2 9.4 16 9.6 13.9 11.5 14.5 14.2 12 12.8 9.5 14.2 10.1 11.5 8 9.6 10.8 9.4" stroke-width="1.6" />
             </svg>
           </div>
           <p class="target-card-text">
-            <strong class="target-card-num">3.</strong> Deseja ter acesso a um conteúdo digno de um mestre queijeiro por um valor que cabe no seu bolso agora.
+            <strong class="target-card-num">3.</strong> Deseja ter acesso a um<br>conteúdo digno de um<br>mestre queijeiro por um valor<br>que cabe no seu bolso agora.
           </p>
         </div>
       </div>
@@ -248,15 +240,13 @@
             <!-- Espaço Reservado da Imagem com Moldura Curva -->
             <div class="moldura-image-container" data-slot="story-image-frame">
               <div class="moldura-photo-slot">
-                <img src="assets/images/crops/karla-bw.webp" alt="Foto da Mentora Karla" class="moldura-photo-img">
+                <!-- Espaço reservado para foto oficial -->
               </div>
             </div>
 
             <!-- Bola no Canto Superior para Logo Posterior -->
             <div class="moldura-logo-ball" data-slot="story-logo-ball" aria-label="Espaço para logo oficial">
-              <div class="moldura-ball-inner">
-                <img src="assets/images/svg/arch-seal.svg" alt="Logo Selo" class="moldura-ball-seal">
-              </div>
+              <div class="moldura-ball-inner"></div>
             </div>
           </div>
         </div>
@@ -308,7 +298,6 @@
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-img-box">
-            <img src="assets/images/crops/step-1.webp" alt="Entrada no Grupo">
             <span class="step-badge">ETAPA 1</span>
           </div>
           <div class="step-body">
@@ -319,7 +308,6 @@
 
         <div class="step-card">
           <div class="step-img-box">
-            <img src="assets/images/crops/step-2.webp" alt="A base e primeiras vendas">
             <span class="step-badge">DIA 1</span>
             <span class="step-live-badge">AO VIVO</span>
           </div>
@@ -331,7 +319,6 @@
 
         <div class="step-card">
           <div class="step-img-box">
-            <img src="assets/images/crops/step-3.webp" alt="A técnica mestre do recheio">
             <span class="step-badge">DIA 2</span>
             <span class="step-live-badge">AO VIVO</span>
           </div>
@@ -343,7 +330,6 @@
 
         <div class="step-card">
           <div class="step-img-box">
-            <img src="assets/images/crops/step-4.webp" alt="O resultado final">
             <span class="step-badge">ETAPA 4</span>
           </div>
           <div class="step-body">
@@ -364,7 +350,7 @@
       </h2>
 
       <div class="testimonials-banner-img">
-        <img src="assets/images/crops/depoimentos-grid.webp" alt="Mural de depoimentos e resultados dos alunos">
+        <!-- Espaço reservado para mural de depoimentos oficiais -->
       </div>
     </div>
   </section>
@@ -396,7 +382,7 @@
     <div class="container">
       <div class="bio-grid">
         <div class="bio-photo-card">
-          <img src="assets/images/crops/karla-bio.webp" alt="Karla segurando queijos artesanais recheados">
+          <!-- Espaço reservado para foto oficial da Karla -->
         </div>
 
         <div class="bio-content">
@@ -423,7 +409,7 @@
         </div>
 
         <div class="guarantee-seal-box">
-          <img src="assets/images/crops/guarantee-seal.webp" alt="Selo de Garantia Incondicional" style="max-width: 360px;">
+          <!-- Espaço reservado para selo oficial de garantia -->
         </div>
       </div>
     </div>
