@@ -116,12 +116,25 @@
     </div>
   </section>
 
-  <!-- 3. GREEN QUOTE BANNER -->
+  <!-- 3. GREEN QUOTE BANNER (CURVA SUPERIOR CÔNCAVA & INFERIOR CONVEXA) -->
   <section class="quote-banner">
-    <div class="container">
+    <!-- Aspas decorativas translúcidas de fundo -->
+    <div class="quote-watermark" aria-hidden="true">“</div>
+
+    <div class="container quote-container">
       <p class="quote-banner-text">
-        "A verdade dói, mas eu preciso dizer: aprender a fazer queijo <em>não é o que muda o seu jogo.</em> Se fosse apenas isso, não teria tanto produtor bom por aí implorando para não perder venda por causa de <em>2 reais.</em>"
+        A verdade dói, mas eu preciso dizer: aprender a fazer queijo<br>
+        <span class="quote-orange-bold">não é o que muda o seu jogo.</span> Se fosse apenas isso, não teria<br>
+        tanto produtor bom por aí implorando para<br>
+        não perder venda por causa de <span class="quote-orange-underline">2 reais.</span>
       </p>
+    </div>
+
+    <!-- Curva inferior da faixa verde (leve inclinação para cima e volta) -->
+    <div class="quote-bottom-divider">
+      <svg class="quote-bottom-curve-svg" viewBox="0 0 1920 70" preserveAspectRatio="none">
+        <path d="M 0,65 Q 960,15 1920,65 L 1920,70 L 0,70 Z" fill="#FAF5EB"></path>
+      </svg>
     </div>
   </section>
 
@@ -162,30 +175,124 @@
     </div>
   </section>
 
-  <!-- 5. STORY & POSITIONING SECTION -->
+  <!-- 5. TARGET AUDIENCE (OS 3 CARDS COM TRAÇO VERDE E CÍRCULO DE LOGO) -->
+  <section class="target-audience-section">
+    <div class="target-watermark-seal" aria-hidden="true">
+      <img src="assets/images/svg/arch-seal.svg" alt="" class="target-seal-img">
+    </div>
+
+    <div class="container">
+      <h2 class="target-section-title">
+        Eu criei este treinamento ao vivo para você que :
+      </h2>
+
+      <div class="target-cards-grid">
+        <!-- Card 1 -->
+        <div class="target-card">
+          <div class="target-card-accent-pill" aria-hidden="true"></div>
+          <div class="target-card-icon-circle" data-slot="card-logo-1">
+            <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 12 20 22 4 22 4 12"></polyline>
+              <rect x="2" y="7" width="20" height="5"></rect>
+              <line x1="12" y1="22" x2="12" y2="7"></line>
+              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+            </svg>
+          </div>
+          <p class="target-card-text">
+            <strong class="target-card-num">1.</strong> Precisa de um produto "chamariz" para atrair novos clientes hoje;
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="target-card">
+          <div class="target-card-accent-pill" aria-hidden="true"></div>
+          <div class="target-card-icon-circle" data-slot="card-logo-2">
+            <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <p class="target-card-text">
+            <strong class="target-card-num">2.</strong> Quer dominar uma técnica segura, sem medo de perder a produção.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="target-card">
+          <div class="target-card-accent-pill" aria-hidden="true"></div>
+          <div class="target-card-icon-circle" data-slot="card-logo-3">
+            <svg class="target-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <p class="target-card-text">
+            <strong class="target-card-num">3.</strong> Deseja ter acesso a um conteúdo digno de um mestre queijeiro por um valor que cabe no seu bolso agora.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. STORY & POSITIONING SECTION (MOLDURA ARQUITETURAL COM QUADRADINHO E BOLA) -->
   <section class="story-section">
     <div class="container">
       <div class="story-grid">
-        <div class="story-bw-card">
-          <img src="assets/images/crops/karla-bw.webp" alt="Karla preparando queijo artesanal">
+        
+        <!-- Left Column: Moldura da Imagem (Quadradinho Verde + Bola de Logo + Espaço da Foto) -->
+        <div class="story-visual-column">
+          <div class="moldura-wrapper">
+            <!-- Quadradinho no Canto Inferior Esquerdo -->
+            <div class="moldura-green-square" aria-hidden="true"></div>
+
+            <!-- Espaço Reservado da Imagem com Moldura Curva -->
+            <div class="moldura-image-container" data-slot="story-image-frame">
+              <div class="moldura-photo-slot">
+                <img src="assets/images/crops/karla-bw.webp" alt="Foto da Mentora Karla" class="moldura-photo-img">
+              </div>
+            </div>
+
+            <!-- Bola no Canto Superior para Logo Posterior -->
+            <div class="moldura-logo-ball" data-slot="story-logo-ball" aria-label="Espaço para logo oficial">
+              <div class="moldura-ball-inner">
+                <img src="assets/images/svg/arch-seal.svg" alt="Logo Selo" class="moldura-ball-seal">
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Right Column: Card de Informações e Oferta R$897,00 -->
         <div class="story-card-box">
-          <div class="section-tag">💎 O TREINAMENTO</div>
-          <h2 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 12px;">
-            Eu ensino essa técnica de <span class="serif-highlight">Queijo Coalho Recheado</span>
+          <div class="story-top-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+              <path d="M 4 8 C 4 8 10 3 17 3 C 21 3 22 7 22 9 L 22 17 C 22 19 20 21 18 21 L 6 21 C 4 21 2 19 2 17 L 2 10 Z"></path>
+              <circle cx="9" cy="14" r="1.5"></circle>
+              <circle cx="15" cy="12" r="1"></circle>
+            </svg>
+          </div>
+
+          <h2 class="story-title">
+            Eu ensino essa técnica de<br>
+            <span class="story-title-italic">Queijo Coalhado Recheado</span>
           </h2>
-          <p style="color: var(--text-body); font-size: 1.05rem;">
+          
+          <p class="story-subtitle">
             dentro da minha formação, um treinamento completo de:
           </p>
-          <div class="story-price-pill">R$ 897,00</div>
-          <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 16px;">
+          
+          <div class="story-price-pill">
+            <span class="story-price-val">R$897,00</span>
+          </div>
+          
+          <p class="story-desc">
             É lá que eu transformo simples queijeiros e não queijeiros em especialistas em queijos recheados.
           </p>
-          <p style="color: var(--text-body); line-height: 1.7;">
-            Mas eu percebi que muitos precisavam de um <strong>"atalho"</strong>. A porta de entrada para um novo nível de faturamento, sem precisar investir esse valor logo de cara.
+          
+          <p class="story-desc">
+            Mas eu percebi que muitas pessoas precisavam de um <strong class="story-orange-highlight">"atalho"</strong>. A porta de entrada para um novo nível de faturamento, sem precisar investir esse valor logo de cara.
           </p>
         </div>
+
       </div>
     </div>
   </section>
